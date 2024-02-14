@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(238.72deg, #0044A9 0%, #F700A3 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 100%, #6A00D5 0%, #00E0FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FF9900 0%, #001AFF 100%);
+    background-blend-mode: hard-light, overlay, color-burn, color-burn, normal;
+}
+
+.heading {
+    display: flex;
+    padding-top: 13vh;
+    color: rgb(255, 255, 255);
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-size: 300%;
+    justify-content: center;
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: underline #ff6b08;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.box {
+    border: none; 
+    outline: none;
+    font-size: 3vh;
+    padding: 1vh 10vh 1vh 1vh;
+    color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 2px 5px 1px #00183a;
+    background: linear-gradient(to left, #9d6ef5, #f5a481);
+}
+
+.btn {
+    border: none;
+    font-size: 3vh;
+    padding: 1vh 2vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s; 
+    cursor: pointer;
+    box-shadow: 2px 5px 1px #00183a;
+    background: #9d6ef5;
+}
+
+.btn:hover {
+    text-shadow: 3px 1px 1px rgb(93, 93, 93);
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    font-size: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        padding: 1vh 1vh 1vh 1vh;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .heading {
+        font-size: 250%;
+    }
+    .box {
+        padding: 0;
+        padding-left: 5px;
+    }
+    .btn {
+        padding: 0;
+    }
+}
